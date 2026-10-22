@@ -1,0 +1,21 @@
+{
+  "gpu": "Tesla T4",
+  "torch": "2.11.0+cu130",
+  "probe": {
+    "steps": 1500,
+    "lr": 0.001,
+    "weight_decay": 0.0001
+  },
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "dataset": "CIFAR-100 (upsampled to 224x224)",
+  "smoke": false,
+  "models": {
+    "I-JEPA ViT-H/14": "facebook/ijepa_vith14_1k",
+    "MAE ViT-H/14": "facebook/vit-mae-huge",
+    "DINOv2 ViT-L/14": "facebook/dinov2-large"
+  }
+}
